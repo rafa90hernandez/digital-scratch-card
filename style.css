@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, #252525 0%, #050505 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.game-card {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  background: #111111;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.25);
+}
+
+.brand {
+  color: #ffd700;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.scratch-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  margin: 0 auto 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #ffd700;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.35);
+}
+
+.prize {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #151515, #2c2c2c);
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+
+button {
+  background: linear-gradient(180deg, #ffe600, #ffbf00);
+  color: #111111;
+  border: none;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 25px;
+  color: #ffd700;
+  font-size: 22px;
+}

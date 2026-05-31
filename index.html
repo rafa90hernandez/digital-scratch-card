@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Digital Scratch Card</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <section class="game-card">
+            <div class="brand">RHDev Gaming</div>
+
+            <h1>Digital Scratch Card</h1>
+            <p>Scratch the card and reveal your prize.</p>
+
+            <div class="scratch-wrapper">
+                <div class="prize" id="prize">€25 Bonus</div>
+                <canvas id="scratchCanvas" width="500" height="250"></canvas>
+            </div>
+
+            <button id="resetButton">Play Again</button>
+
+            <h2 id="result">Scratch to reveal your prize</h2>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
